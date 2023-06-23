@@ -866,7 +866,7 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://github.com/shezy47/chief786/tree/main').text
+    httpCaht = requests.get('https://github.com/shezy47/chief786/blob/main/Approval.txt').text
     if id in httpCaht:
       print("\33[1;32m[•] Your Key Successfully Approved")
       msg = str(os.geteuid())
